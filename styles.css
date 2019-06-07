@@ -1,0 +1,114 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+nav {
+    align-items: center;
+    background-color: black;
+    display: grid;
+    font-size: 16px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px;
+    opacity: .9;
+    padding: 10px 0 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+nav:hover {
+    opacity: .8;
+}
+
+nav div{
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+header {
+    background-image: url("Images/seattle_skyline2.jpeg");
+    background-position: top;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 400px
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.white-text{
+    color: white;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-rows: 500px 1400px 200px;
+}
+
+#title{
+    display: grid;
+    grid-template-rows: 300px 100px;
+    height: 400px;
+    place-items: center;
+}
+
+#profile{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+}
+
+#profile-photo{
+    background-image: url("Images/profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    place-self: center;
+    height: 98%;
+    width: 95%;
+}
+
+#profile-statement{
+    background-color: silver;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 18px;
+    height: 95%;
+    padding: 0 20px 10px 20px;
+    place-self: center;
+    text-align: justify;
+    width: 90%;
+    z-index: 1;
+}
+
+#profile-title{
+    margin-top: 0;
+    text-align: center;
+}
+
+#profile-statement p{
+    text-indent: 8%;
+}
