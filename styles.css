@@ -1,10 +1,12 @@
 body {
-    background-color: whitesmoke;
+    font-family: sans-serif;
+    background-color: rgb(24,24,24);
+    color: lightgray;
     margin: 0;
 }
 nav {
     align-items: center;
-    background-color: black;
+    background-color: rgb(24,24,24);
     display: grid;
     font-size: 16px;
     grid-gap: 10px;
@@ -36,79 +38,159 @@ nav a:hover{
 }
 
 header {
-    background-image: url("Images/seattle_skyline2.jpeg");
-    background-position: top;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
 }
 
 main {
     display: grid;
-    grid-template-rows: 400px
+    grid-template-rows: 1180px 400px;
 }
 
 h1 {
     font-size: 72px;
+    color: white;
 }
 
 h2 {
     font-size: 36px;
+    color: white;
 }
 
 h3 {
     font-size: 26px;
 }
 
-.white-text{
-    color: white;
+hr {
+    margin-top: -20px;
+    width: 20%;
+}
+
+.blueText{
+    color: #003366;
+}
+
+#grid-container, #header-title,
+#profile, #profile-body,
+#profile-section1, #profile-section2,
+#profile-section3, #profile-section4,
+#skills, #skills-row1{
+    display: grid;
 }
 
 #grid-container{
-    display: grid;
-    grid-template-rows: 500px 1400px 200px;
+    grid-template-rows: 600px 1580px 200px;
 }
 
-#title{
-    display: grid;
-    grid-template-rows: 300px 100px;
-    height: 400px;
-    place-items: center;
+#header-photo{
+    background-image: url("Images/beach_pic.jpg");
+    background-size: cover;
+}
+
+#header-wrapper{
+    background-image: url("Images/code.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#header-title{
+    background-color: rgb(24, 24, 24);
+    grid-template-rows: 300px 300px;
+    opacity: .9;
+}
+
+#header-title h1{
+    align-self: flex-end;
+    justify-self: center;
+    opacity: 1;
+}
+
+#header-title p{
+    color: lightgray;
+    font-size: 20px;
+    margin-top: -35px;
+    opacity: 1;
+    padding: 0 70px 0 70px;
+    text-align: center;
 }
 
 #profile{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-
+    background-color: whitesmoke;
+    color: black;
+    grid-template-rows: 100px 1000px;
 }
 
-#profile-photo{
-    background-image: url("Images/profile.jpeg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    place-self: center;
-    height: 98%;
-    width: 95%;
+#profile-body{
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(4, 250px);
 }
 
-#profile-statement{
-    background-color: silver;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    font-size: 18px;
-    height: 95%;
-    padding: 0 20px 10px 20px;
-    place-self: center;
-    text-align: justify;
-    width: 90%;
-    z-index: 1;
-}
-
-#profile-title{
+#profile-title, #skills-title{
     margin-top: 0;
     text-align: center;
 }
 
-#profile-statement p{
-    text-indent: 8%;
+#profile-section1, #profile-section3{
+    grid-template-columns: 3fr 2fr;
+}
+
+#profile-section2, #profile-section4{
+    grid-template-columns: 2fr 3fr;
+}
+
+#profile-section1 p, #profile-section2 p,
+#profile-section3 p, #profile-section4 p{
+    font-size: 20px;
+    padding: 0 10% 0 10%;
+    text-align: justify;
+}
+
+#section1-photo, #section2-photo,
+#section3-photo, #section4-photo{
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 95%;
+    place-self: center;
+    width: 90%;
+}
+
+#section1-photo{
+    background-image: url("Images/mc-12.jpeg");
+}
+
+#section2-photo{
+    background-image: url("Images/profile.jpeg");
+}
+
+#section3-photo{
+    background-image: url("Images/diploma.jpg");
+}
+
+#section4-photo{
+    background-image: url("Images/seattle_skyline.jpeg");
+}
+
+#skills{
+    background-color: lightgray;
+    display: grid;
+    grid-auto-rows: 100px 1fr 1fr;
+}
+
+#skills-row1{
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#java, #javafx{
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+#skills-row2{
+
 }
