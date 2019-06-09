@@ -53,12 +53,13 @@ header h1 {
 
 main {
     display: grid;
-    grid-template-rows: 350px 100px;
+    grid-template-rows: 420px 700px;
 }
 
 iframe {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    place-self: center;
+    align-self: flex-start;
+    justify-self: center;
 }
 
 h1 {
@@ -75,6 +76,10 @@ h3 {
     font-size: 26px;
 }
 
+hr {
+    width: 40%;
+}
+
 button{
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -85,12 +90,26 @@ button{
     color: #003366;
 }
 
-#grid-container, #button-container{
+#grid-container, #button-container, #video, #paper{
     display: grid;
 }
 
 #grid-container{
-    grid-template-rows: 400px 500px 200px;
+    grid-template-rows: 400px 1130px 200px;
+}
+
+#video {
+    grid-template-rows: 60px 20px 340px;
+}
+
+#paper{
+    grid-template-rows: 60px 20px 640px;
+}
+
+#video-title, #paper-title{
+    color: #003366;
+    text-shadow: 3px 3px lightgray;
+    place-self: center;
 }
 
 #button-container{
