@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    background-color: #E7EAED;
+    color: lightgray;
+    margin: 0;
+}
+nav {
+    align-items: center;
+    background-color: rgb(24,24,24);
+    display: grid;
+    font-size: 16px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px;
+    opacity: .9;
+    padding: 10px 0 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav div{
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+header {
+    background-image: url("Images/neural_network.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+header h1 {
+    align-self: center;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 350px 100px;
+}
+
+iframe {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    place-self: center;
+}
+
+h1 {
+    font-size: 72px;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+button{
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 60px;
+}
+
+.blueText{
+    color: #003366;
+}
+
+#grid-container, #button-container{
+    display: grid;
+}
+
+#grid-container{
+    grid-template-rows: 400px 500px 200px;
+}
+
+#button-container{
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+}
