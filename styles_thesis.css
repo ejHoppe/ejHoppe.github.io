@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: #E7EAED;
+    background-color: hsl(195, 57%, 40%);
     color: lightgray;
     margin: 0;
 }
@@ -53,7 +53,7 @@ header h1 {
 
 main {
     display: grid;
-    grid-template-rows: 420px 700px;
+    grid-template-rows: 400px 700px;
 }
 
 iframe {
@@ -76,10 +76,6 @@ h3 {
     font-size: 26px;
 }
 
-hr {
-    width: 40%;
-}
-
 button{
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -90,26 +86,30 @@ button{
     color: #003366;
 }
 
-#grid-container, #button-container, #video, #paper{
+#grid-container, #button-container, #video, #paper, #iframe-container{
     display: grid;
 }
 
 #grid-container{
-    grid-template-rows: 400px 1130px 200px;
+    grid-template-rows: 400px 1100px 200px;
 }
 
 #video {
-    grid-template-rows: 60px 20px 340px;
+    grid-template-rows: 60px 340px;
 }
 
 #paper{
-    grid-template-rows: 60px 20px 640px;
+    grid-template-rows: 60px 640px;
 }
 
 #video-title, #paper-title{
-    color: #003366;
-    text-shadow: 3px 3px lightgray;
+    color: whitesmoke;
+    text-shadow: 1px 1px #303030;
     place-self: center;
+}
+
+#iframe-container{
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 #button-container{
