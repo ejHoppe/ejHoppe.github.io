@@ -10,7 +10,7 @@ nav {
     display: grid;
     font-size: 16px;
     grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 50px;
     opacity: .9;
     padding: 10px 0 10px 0;
@@ -97,13 +97,13 @@ hr {
 
 #header-title{
     background-color: rgb(24, 24, 24);
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 80px 220px;
+    justify-items: center;
     opacity: .9;
 }
 
 #header-title h1{
     align-self: flex-end;
-    justify-self: center;
     opacity: 1;
 }
 
@@ -114,6 +114,17 @@ hr {
     opacity: 1;
     padding: 0 70px 0 70px;
     text-align: center;
+}
+
+#header-title button{
+    background-color: darkred;
+    border-color: black;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    height: 60px;
 }
 
 #profile{

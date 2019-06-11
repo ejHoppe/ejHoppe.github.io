@@ -11,9 +11,10 @@
         <nav>
             <div><a href="./index.html">WELCOME</a></div>
             <div><a href="#" style="text-decoration: underline blue">THESIS</a></div>
-            <div><a href="#">JAVA APPS</a></div>
-            <div><a href="#">PLACEHOLDER</a></div>
-            <div><a href="#">CONTACT ME</a></div>
+            <div><a href="./java.html">JAVA</a></div>
+            <div><a href="#">PYTHON</a></div>
+            <div><a href="#">WEBSITES</a></div>
+            <div><a href"#">CONTACT ME</a></div>
         </nav>
         <div id="grid-container">
             <header>
@@ -21,30 +22,99 @@
             </header>
             <main>
                 <div id="video">
-                    <h2 id="video-title">Final Presentation</h2>
+                    <h2 id="video-title" class="blueText">Final Presentation</h2>
                     <div id="iframe-container">
-                        <div class="burgandy"></div>
+                        <div></div>
                         <iframe width="95%" height="95%"
                             src="https://www.youtube.com/embed/VCxMrk4zX1Y"
                             frameborder="0" allow="accelerometer;
                             autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
-                        <div class="burgandy"></div>
+                        <div></div>
                     </div>
                 </div><!--end video-->
                 <div id="paper">
                     <h2 id="paper-title">Final Version of Thesis</h2>
                     <div id="iframe-container">
-                        <div class="burgandy"></div>
+                        <div></div>
                         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6542665837738897408"
                             height="95%" width="95%" frameborder="0" allowfullscreen="">
                         </iframe>
-                        <div class="burgandy"></div>
+                        <div></div>
                     </div>
                 </div><!--end paper-->
-                <div id="button-container">
-                </div>
+                <div id="app">
+                    <h2 id="app-title">Application</h2>
+                    <h3 id="app-link"s><a href="https://github.com/ejHoppe/Thesis">
+                        ~Link To Github Repository~</a></h3>
+                    <div id="app-container">
+                        <div id="app-explanation">
+                            <p>When I set out to create this program, I wanted
+                                to create a flexible neural network package
+                                similar to Python's TensorFlow or Java's DL4J.
+                                It would allow the programmer to implement as many
+                                layers as they wanted, to implement as many
+                                neurons (nodes) at each layer, and to be able to
+                                choose between several activation functions.
+                                Once created, I had hoped to utilize the program
+                                to build a generative adversarial network to
+                                generate images of numbers.</p>
+                            <p>Due to complexity and time constraints, I ended
+                                up creating a program that allows a user to implement
+                                a neural network with a fixed amount of layers, with
+                                as many neurons as the user wants with a few options
+                                for activation functions.
+                            <p>Once you start the program,
+                                you are presented with a basic GUI where you have
+                                the option to choose between "Train NN", "Test NN",
+                                "Generate", and "Reset".</p>
+                        </div>
+                        <img id="app-photo" src="Images/app_initial.png">
+                        <img id="app-photo" src="Images/app_test.png">
+                        <div id="app-explanation">
+                            <p>The GUI implements a sample size of 10,000 images
+                                pulled from the MNIST dataset (a dataset of
+                                handwritten numbers). </p>
+                            <p>If you click "Train NN", one of the neural
+                                networks will process 3,000 images and learn to
+                                classify the numbers 0 through 9.</p>
+                            <p>Once you have trained the neural network, you
+                                can verify the neutwork's ability to classify
+                                numbers by clicking "Test NN". When you click
+                                "Test NN", a random number will be selected from
+                                the dataset of 10,000. The program will draw
+                                that number and the neural network will attempt
+                                to label it.
+                        </div>
+
+                        <div id="app-explanation">
+                            <p>If you would like to generate a number, I
+                                recommend starting with a un-trained network. If
+                                you start with an already trained discriminator
+                                network, it will dominate the generator network,
+                                and a number will not be generated. Thus, if
+                                "Train NN" has been clicked, I recommend clicking
+                                "Reset" before clicking "Generate". </p>
+                            <p>When you click "Generate", the program runs through
+                                one training cycle, and the final product of the
+                                generator network is drawn in the right side of
+                                the GUI.
+                        </div>
+                        <img id="app-photo" src="Images/app_noise.png">
+                        <img id="app-photo" src="Images/app_product.png">
+                        <div id=app-explanation>
+                            <p>Since each click of the "Generate" button creates
+                                one training cycle, it may take six to eight
+                                clicks to generate a product. The training is a
+                                minmax between the discriminator network and the
+                                generator network, thus there is a chance a
+                                number won't be produced. If this is the case,
+                                click "Reset" and try again.
+                        </div>
+
+                    </div>
+                </div><!--end app-->
             </main>
             <footer>
 

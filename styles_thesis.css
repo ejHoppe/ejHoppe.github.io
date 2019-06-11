@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: hsl(195, 57%, 40%);
-    color: lightgray;
+    background-color: #D3D3D3;
     margin: 0;
 }
 nav {
@@ -10,7 +9,7 @@ nav {
     display: grid;
     font-size: 16px;
     grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 50px;
     opacity: .9;
     padding: 10px 0 10px 0;
@@ -53,7 +52,13 @@ header h1 {
 
 main {
     display: grid;
-    grid-template-rows: 400px 700px;
+    grid-template-rows: 400px 700px 400px;
+}
+
+main h2 {
+    color: #003366;
+    text-shadow: 1px 1px rgba(0,0,0,0.23);
+    place-self: center;
 }
 
 iframe {
@@ -69,11 +74,10 @@ h1 {
 
 h2 {
     font-size: 36px;
-    color: white;
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 button{
@@ -86,12 +90,13 @@ button{
     color: #003366;
 }
 
-#grid-container, #button-container, #video, #paper, #iframe-container{
+#grid-container, #button-container, #video, #paper, #iframe-container, #app,
+#app-container{
     display: grid;
 }
 
 #grid-container{
-    grid-template-rows: 400px 1100px 200px;
+    grid-template-rows: 500px 1100px 200px;
 }
 
 #video {
@@ -102,18 +107,34 @@ button{
     grid-template-rows: 60px 640px;
 }
 
-#video-title, #paper-title{
-    color: whitesmoke;
-    text-shadow: 1px 1px #303030;
-    place-self: center;
-}
-
 #iframe-container{
     grid-template-columns: 1fr 4fr 1fr;
 }
 
-#button-container{
-    grid-column-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    place-content: center;
+#app{
+    grid-template-rows: 30px 30px auto;
+}
+
+#app-link{
+    text-align: center;
+}
+
+#app a{
+    color: darkred;
+    text-decoration: none;
+}
+
+#app-container{
+    grid-template-columns: 1fr 1fr;
+}
+
+#app-explanation{
+    padding: 10px 5% 0 5%;
+    text-align: justify;
+}
+
+#app-photo{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
