@@ -48,7 +48,7 @@ main {
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 10vw;
     color: white;
 }
 
@@ -97,7 +97,8 @@ hr {
 
 #header-title{
     background-color: rgb(24, 24, 24);
-    grid-template-rows: 300px 80px 220px;
+    grid-template-rows: 3fr 1fr 2fr;
+    height: 600px;
     justify-items: center;
     opacity: .9;
 }
@@ -121,10 +122,13 @@ hr {
     border-color: black;
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     height: 60px;
+}
+
+#header-title a{
+    color: white;
+    text-decoration: none;
 }
 
 #profile{
