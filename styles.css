@@ -189,8 +189,30 @@ hr {
 }
 
 @media(max-width: 600px){
+    nav div{
+        visibility: hidden;
+    }
+
+    #profile-section1, #profile-section2, #profile-section3, #profile-section4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
     #profile-section1 p, #profile-section2 p,
     #profile-section3 p, #profile-section4 p{
-        font-size: 16px;
+        grid-row: 1/2;
+        font-size: 18px;
     }
+
+    #profile-section1 img, #profile-section2 img,
+    #profile-section3 img, #profile-section4 img{
+        grid-rows: 2/3;
+    }
+
+    #profile-photo{
+        height: 100%;
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+
 }
