@@ -44,7 +44,7 @@ header {
 
 main {
     display: grid;
-    grid-template-rows: 1180px 400px;
+    grid-template-rows: minmax(1000px 2000px) 400px;
 }
 
 h1 {
@@ -79,7 +79,7 @@ hr {
 }
 
 #grid-container{
-    grid-template-rows: 600px 1580px 200px;
+    grid-template-rows: 600px 1600px 200px;
 }
 
 #header-photo{
@@ -110,7 +110,7 @@ hr {
 
 #header-title p{
     color: lightgray;
-    font-size: 20px;
+    font-size: 3vw;
     margin-top: -35px;
     opacity: 1;
     padding: 0 70px 0 70px;
@@ -123,19 +123,17 @@ hr {
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
-    font-size: 18px;
+    font-size: 2vw;
     height: 60px;
 }
 
 #profile{
     background-color: whitesmoke;
     color: black;
-    grid-template-rows: 100px 1000px;
 }
 
 #profile-body{
-    grid-row-gap: 20px;
-    grid-template-rows: repeat(4, 250px);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 #profile-title, #skills-title{
@@ -154,34 +152,20 @@ hr {
 #profile-section1 p, #profile-section2 p,
 #profile-section3 p, #profile-section4 p{
     font-size: 20px;
-    padding: 0 10% 0 10%;
+    margin-top: -5px;
+    padding: 0 7% 0 7%;
     text-align: justify;
 }
 
-#section1-photo, #section2-photo,
-#section3-photo, #section4-photo{
+#profile-photo{
+    align-self: flex-start;
     background-position: center;
     background-size: cover;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    height: 95%;
-    place-self: center;
-    width: 90%;
-}
-
-#section1-photo{
-    background-image: url("Images/mc-12.jpeg");
-}
-
-#section2-photo{
-    background-image: url("Images/profile.jpeg");
-}
-
-#section3-photo{
-    background-image: url("Images/diploma.jpg");
-}
-
-#section4-photo{
-    background-image: url("Images/seattle_skyline.jpeg");
+    justify-self: center;
+    max-height: 250px;
+    max-width: 300px;
+    width: 98%;
 }
 
 #skills{
@@ -192,7 +176,7 @@ hr {
 }
 
 #skills-row1, #skills-row2{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 #photo{
@@ -202,4 +186,11 @@ hr {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     height: 98%;
     width: 100px;
+}
+
+@media(max-width: 600px){
+    #profile-section1 p, #profile-section2 p,
+    #profile-section3 p, #profile-section4 p{
+        font-size: 16px;
+    }
 }
