@@ -70,6 +70,10 @@ hr {
     color: #003366;
 }
 
+.icon {
+    visibility: hidden;
+}
+
 #grid-container, #header-title,
 #profile, #profile-body,
 #profile-section1, #profile-section2,
@@ -191,6 +195,10 @@ hr {
 @media(max-width: 600px){
     nav div{
         visibility: hidden;
+    }
+
+    .icon {
+        visibility: visible;
     }
 
     #profile-section1, #profile-section2, #profile-section3, #profile-section4 {
