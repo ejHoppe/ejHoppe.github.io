@@ -74,6 +74,51 @@ hr {
     visibility: hidden;
 }
 
+.bar1, .bar2, .bar3 {
+    background-color: #fff;
+    height: 3px;
+    margin: 6px;
+    transition: 0.4s;
+    width: 35px;
+    visibility: hidden;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+  transform: rotate(-45deg) translate(-8px, 7px);
+
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3px, -8px);
+  transform: rotate(45deg) translate(-3px, -8px);
+}
+
+.dropdown-content {
+    background-color: rgb(24,24,24);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    width: 0;
+    position:absolute;
+    top: 51px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+    display:block;
+}
+
 #grid-container, #header-title,
 #profile, #profile-body,
 #profile-section1, #profile-section2,
@@ -84,6 +129,12 @@ hr {
 
 #grid-container{
     grid-template-rows: 600px 1600px 200px;
+}
+
+#hamburger-container{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
 }
 
 #header-photo{
@@ -197,7 +248,12 @@ hr {
         visibility: hidden;
     }
 
-    .icon {
+    .bar1, .bar2, .bar3{
+        visibility: visible;
+    }
+
+    .dropdown-content {
+        width: 34vw;
         visibility: visible;
     }
 
@@ -221,6 +277,5 @@ hr {
         max-height: 200px;
         max-width: 200px;
     }
-
 
 }
