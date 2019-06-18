@@ -10,7 +10,7 @@
     <body>
         <nav>
             <div id="hamburger-container" onclick="toggleChange(this)">
-                <div class="bar1"></div>
+                <div id="bars" class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <div id="dropdown" class="dropdown-content">
@@ -140,14 +140,17 @@
                 && !event.target.matches(".bar2")
                 && !event.target.matches(".bar3")) {
                     var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
+                    for (var i = 0; i < dropdowns.length; i++) {
                         var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
+                        if (openDropdown.classList.contains("show")) {
+                            openDropdown.classList.remove("show");
                         }
                     }
-                    document.getElementById("hamburger-container").classList.toggle("change");
+                    if (document.getElementById("hamburger-container").classList.contains("change")) {
+                        document.getElementById("hamburger-container").classList.toggle("change");
+                    }
+
+
                 }
             }
 

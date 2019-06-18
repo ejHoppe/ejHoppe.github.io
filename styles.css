@@ -10,7 +10,7 @@ nav {
     display: grid;
     font-size: 16px;
     grid-gap: 10px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 40px repeat(5, 1fr) 40px;
     grid-template-rows: 50px;
     opacity: .9;
     padding: 10px 0 10px 0;
@@ -68,10 +68,6 @@ hr {
 
 .blueText{
     color: #003366;
-}
-
-.icon {
-    visibility: hidden;
 }
 
 .bar1, .bar2, .bar3 {

@@ -9,12 +9,23 @@
     </head>
     <body>
         <nav>
+            <div id="hamburger-container" onclick="toggleChange(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div id="dropdown" class="dropdown-content">
+                    <a href="./index.html">WELCOME</a>
+                    <a href="./thesis.html">THESIS</a>
+                    <a href="#" style="text-decoration: underline blue">JAVA</a>
+                    <a href="#">PYTHON</a>
+                    <a href="#">WEBSITES</a>
+                </div> <!--end dropdown-content-->
+            </div> <!--end hamburger-container-->
             <div><a href="./index.html">WELCOME</a></div>
             <div><a href="./thesis.html">THESIS</a></div>
             <div><a href="#" style="text-decoration: underline blue">JAVA</a></div>
             <div><a href="#">PYTHON</a></div>
             <div><a href="#">WEBSITES</a></div>
-            <div><a href="#">CONTACT ME</a></div>
         </nav>
         <div id="grid-container">
             <header>
@@ -52,5 +63,30 @@
 
             </footer> <!--end footer-->
         </div> <!--end grid-container-->
+        <script>
+            function toggleChange(x){
+                x.classList.toggle("change");
+                document.getElementById("dropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches(".bar1")
+                && !event.target.matches(".bar2")
+                && !event.target.matches(".bar3")) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains("show")) {
+                            openDropdown.classList.remove("show");
+                        }
+                    }
+
+                    if (document.getElementById("hamburger-container").classList.contains("change")) {
+                        document.getElementById("hamburger-container").classList.toggle("change");
+                    }
+                }
+            }
+
+        </script>
     </body>
 </html>
