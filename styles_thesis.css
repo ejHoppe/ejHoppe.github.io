@@ -93,6 +93,7 @@ iframe {
     }
 
 p {
+    justify-self: flex-end;
     font-size: 18px;
     max-width: 400px;
     padding: 0 20px 0 20px;
@@ -193,8 +194,7 @@ img {
 }
 
 #app-explanation{
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    padding: 0 1% 0 1%;
+    grid-template-columns: 1fr 1fr;
     text-align: justify;
 }
 
@@ -209,11 +209,19 @@ img {
 {
     #app-explanation{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: auto auto
     }
 
     nav div{
         visibility: hidden;
+    }
+
+    p {
+        justify-self: center;
+    }
+
+    img {
+        justify-self: center;
     }
 
     .bar1, .bar2, .bar3{

@@ -148,21 +148,20 @@ hr {
 
 #header-title{
     background-color: rgb(24, 24, 24);
-    grid-template-rows: 3fr 1fr 2fr;
+    grid-template-rows: 120px 120px 200px 100px;
     height: 600px;
     justify-items: center;
     opacity: .9;
 }
 
 #header-title h1{
-    align-self: flex-end;
     opacity: 1;
 }
 
 #header-title p{
     color: lightgray;
     font-size: 3vw;
-    margin-top: -35px;
+    max-width: 500px;
     opacity: 1;
     padding: 0 70px 0 70px;
     text-align: center;
@@ -203,7 +202,8 @@ hr {
 #profile-section1 p, #profile-section2 p,
 #profile-section3 p, #profile-section4 p{
     font-size: 20px;
-    margin-top: -5px;
+    margin-top: -2px;
+    max-width: 500px;
     padding: 0 7% 0 7%;
     text-align: justify;
 }
@@ -237,6 +237,40 @@ hr {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     height: 98%;
     width: 100px;
+}
+
+@media(min-width: 800px){
+    #header-title{
+        grid-template-rows: 80px 160px 200px 100px;
+    }
+
+    #header-title h1{
+        font-size: 78px;
+    }
+
+    #header-title p{
+        font-size: 24px;
+    }
+
+    #header-title button {
+        font-size: 18px;
+    }
+
+    #profile-section1 p, #profile-section3 p{
+        justify-self: flex-end;
+    }
+
+    #profile-section3 p{
+        padding-top: 10px;
+    }
+
+    #profile-section1 img, #profile-section3 img{
+        justify-self: flex-start;
+    }
+
+    #profile-section2 img, #profile-section4 img{
+        justify-self: flex-end;
+    }
 }
 
 @media(max-width: 600px){
