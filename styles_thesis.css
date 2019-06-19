@@ -46,7 +46,8 @@ header {
 }
 
 header h1 {
-    align-self: center;
+    place-self: center;
+    max-width: 800px;
     text-align: center;
 }
 

@@ -287,6 +287,14 @@ hr {
         visibility: visible;
     }
 
+    #header-title p {
+        font-size: 18px;
+    }
+
+    #header-title button {
+        font-size: 12px;
+    }
+
     #profile-section1, #profile-section2, #profile-section3, #profile-section4 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -305,7 +313,7 @@ hr {
     #profile-photo{
         height: 100%;
         max-height: 200px;
-        max-width: 200px;
+        max-width: 250px;
     }
 
 }
