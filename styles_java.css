@@ -126,7 +126,7 @@ h3 {
 }
 
 #grid-container {
-    grid-template-rows: 500px 600px;
+    grid-template-rows: 500px 600px 1200px;
 }
 
 #title-container {
