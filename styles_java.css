@@ -52,12 +52,16 @@ header h1 {
 
 main {
     display: grid;
-    grid-template-rows: 700px 700px;
+    grid-template-rows: 480px 460px;
 }
 
 main a{
     color: darkred;
     text-decoration: none;
+}
+
+iframe {
+    place-self: center;
 }
 
 h1 {
@@ -121,12 +125,13 @@ h3 {
     display:block;
 }
 
-#grid-container, #title-container, #poker-container, #app-container{
+#grid-container, #title-container, #poker-container,
+#ship-container, #app-container{
     display: grid;
 }
 
 #grid-container {
-    grid-template-rows: 500px 600px 1200px;
+    grid-template-rows: 500px 500px;
 }
 
 #title-container {
@@ -136,8 +141,8 @@ h3 {
     width: 100%;
 }
 
-#poker-container{
-    grid-template-rows: 60px 60px 400px;
+#poker-container, #ship-container{
+    grid-template-rows: 60px 50px 350px;
 }
 
 #app-title {
@@ -148,15 +153,6 @@ h3 {
 
 #app-link {
     text-align: center;
-}
-
-#app-container{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-}
-
-#app-photo{
-    width: 100%;
 }
 
 @media(max-width: 600px){

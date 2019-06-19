@@ -42,8 +42,11 @@
                         </a>
                     </h3>
                     <div id="app-container">
-                        <img id="app-photo" src="Images/poker_initial.png">
-                        <img id="app-photo" src="Images/poker_gamePlay.png">
+                        <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/aRD0VhgwQRc"
+                        frameborder="0" allow="accelerometer; autoplay;
+                        encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     </div>
                 </div>
                 <div id="ship-container">
@@ -54,37 +57,14 @@
                         </a>
                     </h3>
                     <div id="app-container">
-                        <img id="app-photo" src="Images/ship_initial.png">
-                        <img id="app-photo" src="Images/ship_play.png">
                     </div> <!--end app-container-->
                 </div> <!--end ship-container-->
-                <div id='javafx-app-placeholder'></div>
             </main>
             <footer>
 
             </footer> <!--end footer-->
         </div> <!--end grid-container-->
-        <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
         <script>
-        function javafxEmbeddrawpokerapp() {
-            dtjava.embed(
-                {
-                    id : 'drawpokerapp',
-                    url : 'DrawPokerApp.jnlp',
-                    placeholder : 'javafx-app-placeholder',
-                    width : '800',
-                    height : '600'
-                },
-                {
-                    javafx : '8.0+'
-                },
-                {}
-            );
-        }
-        <!-- Embed FX application into web page once page is loaded -->
-        dtjava.addOnloadCallback(javafxEmbeddrawpokerapp);
-
-
             function toggleChange(x){
                 x.classList.toggle("change");
                 document.getElementById("dropdown").classList.toggle("show");

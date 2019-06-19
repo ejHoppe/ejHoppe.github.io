@@ -87,13 +87,19 @@ button{
 }
 
 iframe {
+    max-width: 650px;
     width: 80vw;
     height: 95%;
     }
 
 p {
     font-size: 18px;
+    max-width: 400px;
     padding: 0 20px 0 20px;
+}
+
+img {
+    max-width: 400px;
 }
 
 .blueText{
@@ -168,9 +174,6 @@ p {
     grid-template-rows: 60px 640px;
 }
 
-#iframe-container{
-    grid-template-columns: 1fr 4fr 1fr;
-}
 
 #app{
     grid-template-rows: 30px 50px auto;
@@ -190,8 +193,8 @@ p {
 }
 
 #app-explanation{
-    grid-template-columns: 1fr 1fr;
-    padding: 0 5% 0 5%;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    padding: 0 1% 0 1%;
     text-align: justify;
 }
 
