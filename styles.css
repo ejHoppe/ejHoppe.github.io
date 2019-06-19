@@ -4,10 +4,14 @@ body {
     color: lightgray;
     margin: 0;
 }
+
+nav, header, main, footer {
+    display: grid;
+}
+
 nav {
     align-items: center;
     background-color: rgb(24,24,24);
-    display: grid;
     font-size: 16px;
     grid-gap: 10px;
     grid-template-columns: 40px repeat(5, 1fr) 40px;
@@ -38,13 +42,26 @@ nav a:hover{
 }
 
 header {
-    display: grid;
     grid-template-columns: 2fr 4fr;
 }
 
 main {
-    display: grid;
     grid-template-rows: minmax(1000px 2000px) 400px;
+}
+
+footer {
+    align-items: center;
+    grid-template-rows: 50px 80px;
+    text-align: center;
+}
+
+footer a {
+    color: whitesmoke;
+    font-size: 28px;
+}
+
+footer p {
+    font-size: 12px;
 }
 
 h1 {
@@ -55,6 +72,7 @@ h1 {
 h2 {
     font-size: 36px;
     color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.23);
 }
 
 h3 {
@@ -119,12 +137,13 @@ hr {
 #profile, #profile-body,
 #profile-section1, #profile-section2,
 #profile-section3, #profile-section4,
-#skills, #skills-row1, #skills-row2, #skills-row3{
+#skills, #skills-row1, #skills-row2,
+#skills-row3, #link-container, #copyright{
     display: grid;
 }
 
 #grid-container{
-    grid-template-rows: 600px 1600px 200px;
+    grid-template-rows: 600px auto 150px;
 }
 
 #hamburger-container{
@@ -221,9 +240,8 @@ hr {
 
 #skills{
     background-color: lightgray;
-    display: grid;
     grid-row-gap: 20px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 50px;
 }
 
 #skills-row1, #skills-row2{
@@ -237,6 +255,19 @@ hr {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     height: 98%;
     width: 100px;
+}
+
+#link-container {
+    align-items: flex-end;
+    height: 50px;
+    grid-template-columns: repeat(5, 30px);
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+#copyright {
+    display: grid;
+    height: 80px;
 }
 
 @media(min-width: 800px){
