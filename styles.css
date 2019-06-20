@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: rgb(24,24,24);
+    background-color: whitesmoke;
     color: lightgray;
     margin: 0;
 }
@@ -51,6 +51,7 @@ main {
 
 footer {
     align-items: center;
+    background-color: rgb(24,24,24);
     grid-template-rows: 50px 80px;
     text-align: center;
 }
@@ -197,12 +198,15 @@ hr {
 }
 
 #profile{
-    background-color: whitesmoke;
     color: black;
+    justify-self: center;
+    max-width: 800px;
 }
 
 #profile-body{
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    padding-bottom: 40px;
 }
 
 #profile-title, #skills-title{
@@ -222,20 +226,17 @@ hr {
 #profile-section3 p, #profile-section4 p{
     font-size: 20px;
     margin-top: -2px;
-    max-width: 500px;
-    padding: 0 7% 0 7%;
+    padding: 0 5% 0 5%;
     text-align: justify;
 }
 
 #profile-photo{
-    align-self: flex-start;
-    background-position: center;
-    background-size: cover;
+    background-size:contain;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     justify-self: center;
+    width: 100%;
     max-height: 250px;
     max-width: 300px;
-    width: 98%;
 }
 
 #skills{
@@ -316,6 +317,10 @@ hr {
     .dropdown-content {
         width: 34vw;
         visibility: visible;
+    }
+
+    #header-title{
+        grid-template-rows: 80px 120px 220px 100px;
     }
 
     #header-title p {
